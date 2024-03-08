@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class JobSearchSite(ABC):
+class JobABC(ABC):
     @abstractmethod
-    def fetch_vacancies(self):
+    def get_vacancies(self):
         pass
