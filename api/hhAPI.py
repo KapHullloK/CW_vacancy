@@ -20,7 +20,6 @@ class HHAPI(JobABC):
                 tmp["employment"] = vacancy['employment']['name']
                 tmp["experience"] = vacancy['experience']['name']
                 tmp["salary"] = [vacancy['salary']['from'], vacancy['salary']['to'], vacancy["salary"]["currency"]]
-                tmp["schedule"] = vacancy['schedule']['name']
                 tmp['responsibility'] = vacancy['snippet']['responsibility']
             except KeyError:
                 continue
